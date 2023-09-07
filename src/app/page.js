@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
 	return (
 		<div className="content">
-			<div className="intro">
+			<div className="intro" id="intro">
 				<div>
 					<h1 style={{ marginBottom: 0 }}> JOSHUA</h1>
 					<h1>AMILHASAN</h1>
@@ -55,7 +55,7 @@ export default function Home() {
 					</ul>
 				</div>
 			</div>
-			<div className="skills">
+			<div className="skills" id="skills">
 				<div>
 					<h1>Skills</h1>
 					<ul className="skill-categories">
@@ -72,10 +72,11 @@ export default function Home() {
 								</h2>
 								<ul>
 									<li>HTML5</li>
-									<li>CSS3 + Bootstrap</li>
+									<li>CSS3</li>
 									<li>JavaScript</li>
 									<li>React.js</li>
 									<li>Next.js</li>
+									<li>Bootstrap</li>
 								</ul>
 							</li>
 						</div>
@@ -124,8 +125,69 @@ export default function Home() {
 					</ul>
 				</div>
 			</div>
+			<div className="projects" id="projects">
+				<div>
+					<h1>Projects</h1>
+					<ul>
+						<li>
+							<h2>Recipe Sharing Web Platform</h2>
+							<ul>
+								<li>C#</li>
+								<li>ASP.NET</li>
+								<li>REST API</li>
+								<li>React.js</li>
+								<li>Microsoft SQL Server</li>
+							</ul>
+							<p>
+								A full-stack web application project for
+								browsing and sharing recipes with others.
+							</p>
+						</li>
+						<li>
+							<h2>Remote Desktop Android Application</h2>
+							<ul>
+								<li>Java</li>
+								<li>Kotlin</li>
+								<li>Task Automation</li>
+							</ul>
+							<p>
+								An Android application that automatically
+								launches desktop applications and scripts
+								remotely.
+							</p>
+						</li>
+						<li>
+							<h2>Personal Voice Assistant</h2>
+							<ul>
+								<li>Python</li>
+								<li>Speech Recognition</li>
+								<li>Task Automation</li>
+							</ul>
+							<p>
+								A personal voice activated assistant that
+								automates launching desktop programs.
+							</p>
+						</li>
+						<li>
+							<h2>Discord Bot</h2>
+							<ul>
+								<li>Python</li>
+								<li>MongoDB</li>
+								<li>REST API</li>
+								<li>Command Line Interface</li>
+							</ul>
+							<p>
+								A personal Discord bot that communicates with
+								the Mangadex API and leverages MongoDB to track
+								comic reading progress and automatically check
+								for chapter updates.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<div className="footer">
-				<footer class="py-3 my-4">
+				<footer class="py-3">
 					<ul class="nav justify-content-center pb-3 mb-3">
 						<li class="nav-item">
 							<a href="#intro" class="nav-link px-2 text-muted">
@@ -133,17 +195,15 @@ export default function Home() {
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link px-2 text-muted">
-								About
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="#" class="nav-link px-2 text-muted">
+							<a href="#skills" class="nav-link px-2 text-muted">
 								Skills
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link px-2 text-muted">
+							<a
+								href="#projects"
+								class="nav-link px-2 text-muted"
+							>
 								Projects
 							</a>
 						</li>
